@@ -14,7 +14,7 @@ def connect():
 
 def list_client(plex):
     for client in plex.clients():
-        print(client.isPlayingMedia())
+        print(client.title + ": " + str(client.state) )
 
 
 def main():
